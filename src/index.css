@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+
+/* HOME */
+
+.Home{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* SIDEBARRRRRR */
+
 .SidebarBox {
   width: 80px;
   height: 100vh;
@@ -74,4 +85,14 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+
+/* RIGHTSIDEBARRR */
+
+.RightSidebar{
+  height: 100vh;
+  width: 40vw;
+  background-color: black;
+  color: white;
 }
