@@ -39,14 +39,12 @@
   margin-bottom: 30px;
 }
 
-/* MAIN MENU */
 .SideBox {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-/* MENU ITEMS */
 .menuItem {
   display: flex;
   align-items: center;
@@ -61,26 +59,22 @@
   background-color: #1a1a1a;
 }
 
-/* ICON FIX WIDTH */
 .icon {
   min-width: 30px;
   display: flex;
   justify-content: center;
 }
 
-/* TEXT HIDDEN INITIALLY */
 .menuItem .text {
   opacity: 0;
   white-space: nowrap;
   transition: opacity 0.2s ease;
 }
 
-/* SHOW TEXT ON HOVER */
 .SidebarBox:hover .text {
   opacity: 1;
 }
 
-/* BOTTOM */
 .BottomBox {
   display: flex;
   flex-direction: column;
@@ -90,9 +84,74 @@
 
 /* RIGHTSIDEBARRR */
 
-.RightSidebar{
+.RightSidebar {
+  width: 300px;
   height: 100vh;
-  width: 40vw;
-  background-color: black;
+  padding: 20px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: black;
+}
+
+.suggestionItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.Username {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.Info {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.follow {
+  font-size: 12px;
+  color: #0095f6;
+  cursor: pointer;
+}
+
+.SuggestionsBox{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.userProfile{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Switch{
+  color: rgb(0, 187, 255);
+  cursor: pointer;
+  font-size: small;
+}
+
+.Follow{
+  color: #0095f6;
+  font-size: small;
+  cursor: pointer;
+
 }
