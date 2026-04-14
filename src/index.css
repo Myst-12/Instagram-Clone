@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.SidebarBox {
+  width: 80px;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border-right: 1px solid #262626;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.SidebarBox:hover {
+  width: 250px;
+}
+
+.LogoBox {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* MAIN MENU */
+.SideBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* MENU ITEMS */
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.menuItem:hover {
+  background-color: #1a1a1a;
+}
+
+/* ICON FIX WIDTH */
+.icon {
+  min-width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/* TEXT HIDDEN INITIALLY */
+.menuItem .text {
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+/* SHOW TEXT ON HOVER */
+.SidebarBox:hover .text {
+  opacity: 1;
+}
+
+/* BOTTOM */
+.BottomBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

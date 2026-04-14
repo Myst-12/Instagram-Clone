@@ -1,9 +1,44 @@
 import React from 'react'
+import { Home, Search, Compass, Heart, PlusSquare, Clapperboard, Send } from "lucide-react"
 
 const Sidebar = () => {
+
+  const menu = [
+    { name: "Home", icon: <Home size={22} /> },
+    { name: "Reels", icon: <Clapperboard size={22} /> },
+    { name: "Messages", icon: <Send size={22} /> },
+    { name: "Search", icon: <Search size={22} /> },
+    { name: "Explore", icon: <Compass size={22} /> },
+    { name: "Notifications", icon: <Heart size={22} /> },
+    { name: "Create", icon: <PlusSquare size={22} /> }
+  ]
+
   return (
-    <div>Sidebar</div>
-    
+    <div className="SidebarBox">
+
+      <div className='LogoBox'>
+        <p className="text">Logo</p>
+      </div>
+
+      <div className='SideBox'>
+        {menu.map((item, index) => (
+          <div key={index} className="menuItem">
+            <span className="icon">{item.icon}</span>
+            <span className="text">{item.name}</span>
+          </div>
+        ))}
+      </div>
+
+      <div className='BottomBox'>
+        <div className="menuItem">
+          <span className="text">More</span>
+        </div>
+        <div className="menuItem">
+          <span className="text">Also From Meta</span>
+        </div>
+      </div>
+
+    </div>
   )
 }
 
