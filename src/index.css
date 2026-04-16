@@ -155,7 +155,22 @@
   cursor: pointer;
 
 }
+
 .logo {
   width: 60px;
   height: auto;
 }
+
+/*FeedLayoutBoxxx*/
+
+
+.FeedLayoutBox{
+  background-color: #000;
+  width: 100vw;
+  color: white;
+  text-align: center;
+}
+
+/*SUIII*/
+
+

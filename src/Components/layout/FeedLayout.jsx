@@ -2,7 +2,9 @@ import React from 'react'
 
 const FeedLayout = () => {
   return (
-    <div>FeedLayout</div>
+    <div className='FeedLayoutBox'>
+      FeedLayout
+    </div>
   )
 }
 
