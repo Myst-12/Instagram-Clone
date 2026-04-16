@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from "../../Images/logo.png";
 import { Home, Search, Compass, Heart, PlusSquare, Clapperboard, Send } from "lucide-react"
 
 const Sidebar = () => {
@@ -17,7 +18,7 @@ const Sidebar = () => {
     <div className="SidebarBox">
 
       <div className='LogoBox'>
-        <p className="text">Logo</p>
+        <img src={logo} className="logo"/>
       </div>
 
       <div className='SideBox'>
