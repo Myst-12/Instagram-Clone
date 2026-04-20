@@ -269,3 +269,102 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/*Messages Box*/
+
+/* ================= FLOATING MESSAGES ================= */
+
+/* FLOATING PILL */
+.MessagesFloating {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 10px 14px;
+
+  background-color: #262626;
+  border-radius: 50px;
+
+  color: white;
+  cursor: pointer;
+
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: all 0.2s ease;
+}
+
+.MessagesFloating:hover {
+  background-color: #333;
+}
+
+
+/* LEFT SIDE */
+.msgLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #262626
+  
+}
+
+.msgIcon {
+  font-size: 16px;
+  background-color: #262626
+}
+
+.msgText {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #262626
+}
+
+
+/* RIGHT SIDE */
+.msgRight {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #262626
+}
+
+
+/* AVATAR STACK (FIXED) */
+.msgAvatars {
+  display: flex;
+  align-items: center;
+  background-color: #262626
+}
+
+.msgAvatars .avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #262626;
+  background-color: gray;
+
+  margin-left: -6px;
+}
+
+.msgAvatars .avatar:first-child {
+  margin-left: 0;
+}
+
+
+/* BADGE (OVERLAPPING) */
+.msgBadge {
+  position: absolute;
+  right: -10px;
+  top: -8px;
+
+  background-color: red;
+  color: white;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  padding: 4px 6px;
+  border-radius: 50px;
+}

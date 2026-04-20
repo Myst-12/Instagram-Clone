@@ -43,6 +43,22 @@ const RightSidebar = () => {
         ))}
       </div>
 
+        <div className="MessagesFloating">
+          <div className="msgLeft">
+            <span className="msgIcon">💬</span>
+            <span className="msgText">Messages</span>
+          </div>
+
+          <div className="msgRight">
+            <div className="msgAvatars">
+              <div className="avatar small"></div>
+              <div className="avatar small"></div>
+              <div className="avatar small"></div>
+            </div>
+            <div className="msgBadge">5</div>
+          </div>
+        </div>
+
     </div>
   )
 }
