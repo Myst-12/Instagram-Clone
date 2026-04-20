@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #000;
+  background-color: #0b1014;
+  font-family: Arial, sans-serif;
 }
 
 
@@ -26,7 +27,7 @@
 .SidebarBox {
   width: 80px;
   height: 100vh;
-  background-color: #000;
+  background-color: #0b1014;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -102,7 +103,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: black;
+  background-color: #0b1014;
 }
 
 .suggestionItem {
@@ -175,7 +176,7 @@
 
 
 .FeedLayoutBox {
-  background-color: #000;
+  background-color: #0b1014;
   color: white;
   
   width: 600px;              /* IMPORTANT */
@@ -193,7 +194,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
   padding: 10px 15px;
   overflow-x: auto;
   border-bottom: 0.5px solid rgb(52, 52, 52);
@@ -224,36 +225,31 @@
 /* ================= STORY RING ================= */
 
 .StoryRing {
-  padding: 2px;
+  padding: 3px;
   border-radius: 50%;
   background: linear-gradient(
     45deg,
     #feda75,
-    #fa7e1e,
-    #d62976,
-    #962fbf,
-    #4f5bd5
+    #fac31e,
+    #faa61e,
+    #d629bc,
+    #bf2fac,
+    #d54fca
   );
-}
-
-
-/* Seen story (optional class) */
-.seen .StoryRing {
-  background: gray;
 }
 
 
 /* ================= IMAGE ================= */
 
 .StoryItemImg {
-  background: black; /* creates inner spacing effect */
-  padding: 2px;
+  background: #0b1014; /* creates inner spacing effect */
+  padding: 3px;
   border-radius: 50%;
 }
 
 .StoryItemImg img {
-  width: 65px;
-  height: 65px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
@@ -264,7 +260,7 @@
 
 .StoryName {
   margin-top: 6px;
-  font-size: 11px;
+  font-size: 12px;
   color: #e0e0e0;
   text-align: center;
   font-weight: 400;
