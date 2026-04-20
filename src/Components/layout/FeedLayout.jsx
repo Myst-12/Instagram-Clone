@@ -1,9 +1,10 @@
 import React from 'react'
+import StoryBar from '../stories/StoryBar'
 
 const FeedLayout = () => {
   return (
     <div className='FeedLayoutBox'>
-      FeedLayout
+      <StoryBar />
     </div>
   )
 }

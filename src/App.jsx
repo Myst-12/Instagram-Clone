@@ -4,11 +4,15 @@ import FeedLayout from "./Components/layout/FeedLayout"
 
 
 function App() {
-  return(
+  return (
     <div className="Home">
       <Sidebar />
-      <FeedLayout />
-      <RightSidebar />
+
+      <div className="MainSection">
+        <FeedLayout />
+        <RightSidebar />
+      </div>
+      
     </div>
   )
 }

@@ -2,15 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #000;
 }
 
 
 /* HOME */
 
-.Home{
+.Home {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+}
+
+.MainSection {
+  margin-left: 80px;        /* sidebar space */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 /* SIDEBARRRRRR */
@@ -24,9 +32,11 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 10px;
-  border-right: 1px solid #262626;
-  transition: width 0.3s ease;
+  transition: width 0.7s ease;
   overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
 .SidebarBox:hover {
@@ -157,20 +167,109 @@
 }
 
 .logo {
-  width: 60px;
+  width: 40px;
   height: auto;
 }
 
 /*FeedLayoutBoxxx*/
 
 
-.FeedLayoutBox{
+.FeedLayoutBox {
   background-color: #000;
-  width: 100vw;
   color: white;
-  text-align: center;
+  
+  width: 600px;              /* IMPORTANT */
+  margin: 0 auto;            /* centers it */
+  
+  display: flex;
+  flex-direction: column;
 }
 
 /*SUIII*/
 
+/* ================= STORY BAR ================= */
 
+.StoryBarBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 15px;
+  overflow-x: auto;
+  border-bottom: 0.5px solid rgb(52, 52, 52);
+  scrollbar-width: none;
+}
+
+.StoryBarBox::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* ================= STORY ITEM ================= */
+
+.StoryItemBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  min-width: 75px;
+  transition: transform 0.2s ease;
+}
+
+.StoryItemBox:hover {
+  transform: scale(1.05);
+}
+
+
+/* ================= STORY RING ================= */
+
+.StoryRing {
+  padding: 2px;
+  border-radius: 50%;
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+}
+
+
+/* Seen story (optional class) */
+.seen .StoryRing {
+  background: gray;
+}
+
+
+/* ================= IMAGE ================= */
+
+.StoryItemImg {
+  background: black; /* creates inner spacing effect */
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.StoryItemImg img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* ================= NAME ================= */
+
+.StoryName {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #e0e0e0;
+  text-align: center;
+  font-weight: 400;
+  max-width: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
