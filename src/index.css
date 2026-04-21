@@ -515,5 +515,7 @@ body {
 
 /* Right sidebar */
 .MainSection > :last-child {
-  width: 300px;
+  width: 320px;              
+  border-left: 1px solid #262626;
+  padding-left: 10px;        
 }
