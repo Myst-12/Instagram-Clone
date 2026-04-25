@@ -5,19 +5,20 @@ const chats = [
     name: "Dakshraj",
     message: "Hi how are you doing?",
     time: "2h",
-    img: "https://i.pravatar.cc/150?img=1",
+    img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/37/aa/3d/caption.jpg?w=800&h=800&s=1",
   },
+  
   {
     name: "Kushal",
     message: "Congratulations on winning the Hackathon",
     time: "1h",
-    img: "https://i.pravatar.cc/150?img=2",
+    img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/37/aa/3d/caption.jpg?w=800&h=800&s=1",
   },
   {
     name: "Sourav",
     message: "Leesssgoooo we got an internship",
     time: "5m",
-    img: "https://i.pravatar.cc/150?img=3",
+    img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/37/aa/3d/caption.jpg?w=800&h=800&s=1",
   },
 ];
 
@@ -32,10 +33,10 @@ const MessagesPage = () => {
         maxWidth: "400px",
       }}
     >
-      {/* Header */}
+   
       <h2 style={{ marginBottom: "20px" }}>username ✏️</h2>
 
-      {/* Search Bar */}
+     
       <input
         type="text"
         placeholder="Search"
@@ -50,7 +51,7 @@ const MessagesPage = () => {
         }}
       />
 
-      {/* Chat List */}
+   
       {chats.map((chat, index) => (
         <div
           key={index}
@@ -63,7 +64,7 @@ const MessagesPage = () => {
             cursor: "pointer",
           }}
         >
-          {/* Left side */}
+       
           <div style={{ display: "flex", alignItems: "center" }}>
             <img
               src={chat.img}
@@ -84,7 +85,7 @@ const MessagesPage = () => {
             </div>
           </div>
 
-          {/* Time */}
+    
           <div style={{ color: "#aaa", fontSize: "12px" }}>
             {chat.time}
           </div>
