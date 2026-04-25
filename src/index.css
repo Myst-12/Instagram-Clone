@@ -519,3 +519,73 @@ body {
   border-left: 1px solid #262626;
   padding-left: 10px;        
 }
+
+/* ----------------- Inbox CSS --------------- */
+.inbox-container {
+  max-width: 400px;
+  margin: auto;
+  color: white;
+}
+
+.inbox-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.inbox-search {
+  padding: 10px;
+}
+
+.inbox-search input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #262626;
+  color: white;
+}
+
+.inbox-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #222;
+}
+
+.inbox-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.inbox-info {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.inbox-info h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.inbox-info p {
+  margin: 2px 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.inbox-meta {
+  text-align: right;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+  margin-top: 5px;
+}
