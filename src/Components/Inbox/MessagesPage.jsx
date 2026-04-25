@@ -1,77 +1,92 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 const chats = [
   {
     name: "Dakshraj",
     message: "Hi how are you doing?",
+    time: "2h",
     img: "https://i.pravatar.cc/150?img=1",
   },
   {
     name: "Kushal",
     message: "Congratulations on winning the Hackathon",
+    time: "1h",
     img: "https://i.pravatar.cc/150?img=2",
   },
   {
     name: "Sourav",
     message: "Leesssgoooo we got an internship",
+    time: "5m",
     img: "https://i.pravatar.cc/150?img=3",
   },
 ];
 
 const MessagesPage = () => {
-  const navigate = useNavigate();
-
   return (
     <div
       style={{
-        background: "#121212",
+        background: "#000",
         height: "100vh",
         color: "white",
         padding: "20px",
+        maxWidth: "400px",
       }}
     >
-      {/* Back Button */}
-      <button
-        onClick={() => navigate("/")}
+      {/* Header */}
+      <h2 style={{ marginBottom: "20px" }}>username ✏️</h2>
+
+      {/* Search Bar */}
+      <input
+        type="text"
+        placeholder="Search"
         style={{
+          width: "100%",
+          padding: "10px",
+          borderRadius: "10px",
+          border: "none",
+          background: "#262626",
+          color: "white",
           marginBottom: "20px",
-          padding: "8px 12px",
-          cursor: "pointer",
         }}
-      >
-        ⬅ Back
-      </button>
+      />
 
-      <h2>Messages</h2>
-
+      {/* Chat List */}
       {chats.map((chat, index) => (
         <div
           key={index}
           style={{
             display: "flex",
             alignItems: "center",
-            padding: "12px",
-            borderBottom: "1px solid #333",
+            justifyContent: "space-between",
+            padding: "12px 0",
+            borderBottom: "1px solid #222",
             cursor: "pointer",
           }}
         >
-          <img
-            src={chat.img}
-            alt=""
-            style={{
-              width: "45px",
-              height: "45px",
-              borderRadius: "50%",
-              marginRight: "12px",
-            }}
-          />
+          {/* Left side */}
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <img
+              src={chat.img}
+              alt=""
+              style={{
+                width: "50px",
+                height: "50px",
+                borderRadius: "50%",
+                marginRight: "12px",
+              }}
+            />
 
-          <div>
-            <div style={{ fontWeight: "bold" }}>{chat.name}</div>
-            <div style={{ fontSize: "13px", color: "#aaa" }}>
-              {chat.message}
+            <div>
+              <div style={{ fontWeight: "bold" }}>{chat.name}</div>
+              <div style={{ color: "#aaa", fontSize: "14px" }}>
+                {chat.message}
+              </div>
             </div>
+          </div>
+
+          {/* Time */}
+          <div style={{ color: "#aaa", fontSize: "12px" }}>
+            {chat.time}
           </div>
         </div>
       ))}

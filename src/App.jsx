@@ -3,7 +3,6 @@ import RightSidebar from "./Components/layout/RightSidebar";
 import FeedLayout from "./Components/layout/FeedLayout";
 import Inbox from "./Components/Inbox/Inbox";
 import Chat from "./Components/Inbox/Chat";
-import Messages from "./Components/Inbox/Messages";
 import { Routes, Route } from "react-router-dom";
 import MessagesPage from "./Components/Inbox/MessagesPage";
 

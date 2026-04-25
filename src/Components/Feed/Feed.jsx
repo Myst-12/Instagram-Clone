@@ -1,4 +1,4 @@
-import FeedItem from "./Feeditem";
+import FeedItem from "./FeedItem";
 
 const posts = [
   {
